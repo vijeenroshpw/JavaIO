@@ -1,7 +1,15 @@
 package IO;
 import java.io.*;
  
-
+/**
+	A class for simplyfing the terminal based IO 
+	
+	@author : Vijeenrosh P.W <hsorhteeniv@gmail.com>
+	
+	@package :IO
+	
+	@category :IO
+*/
 public final class IO {
 	static DataInputStream din;            // a data input stream object	
 	static boolean is_good;
@@ -17,8 +25,10 @@ public final class IO {
 	}
 	
 
-        /* Reads a integer from the standard input . If you entered a malformed integer ,
-	   the function will prompt for a integer again */	
+        /**
+		Reads integer from the terminal.
+		If a malformed integer is entered , then It will prompt for integer again
+	*/	
 	public static int  readInt() {  
 		int data = 0;		
 		while( !is_good ) {
