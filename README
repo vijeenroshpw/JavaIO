@@ -1,0 +1,36 @@
+Vijeenrosh P.W <hosrhteeniv@gmail.com>
+
+This is a small package (which will be extended in time) for simplifing the Common JavaIO. Currently
+Version 1.0 is Having a class named IO.java , which will simplify the Reading of input from the Stan /
+dard Input
+
+
+To set up the package:
+
+1) Download the package
+
+2) Unzip it to any folder , Remember the full path to the folder where you unzipped , eg say /home/vijeen/java
+   
+3)now do the following :
+	
+	user@machine~$ gedit ~/.bashrc
+	#now at the end of this file 
+	#add following line
+	export CLASSPATH=$CLASSPATH:/home/vijeen/java            # add your path there
+	#save and exit
+
+4) using the simplified IO
+
+   a) in your source file add a line at top
+	import IO.*;
+   b) readint integer 
+		int i = IO.readInt();
+      radint float 
+		float f = IO.readFloat();
+      reading Char 
+		char ch = IO.readChar();
+      readiint a String 
+		String str = IO.readString();
+      
+    c) while reading if you enter a malformed values , the function will ask you to enter the value again 
+   
